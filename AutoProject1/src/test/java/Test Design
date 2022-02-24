@@ -1,0 +1,29 @@
+Homepage
+	Logo
+	Search
+	Add to cart of product on homepage
+	Follow us on facebook option
+	Newsletter
+	Hover over cart element
+	
+Sign in
+	Sign in with correct credentials
+	Sign in with incorrect credentials
+	
+Sign up
+	Sign up with correct credentials
+	Sign up with incorrect credentials
+	
+Search
+	Search with correct product
+	Search up with incorrect product
+	
+Adding to cart
+	Adding the searched product to cart
+	
+Modifying cart
+	Increasing number of quantity of added product
+	Decreasing number of quantity of added product
+	
+Placing an order/checkout
+	Checking out with the product in cart
