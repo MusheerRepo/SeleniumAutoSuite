@@ -10,7 +10,7 @@
       <class name="RunnerFiles.RunnerFile">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="1"/>
+          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- RunnerFiles.RunnerFile -->

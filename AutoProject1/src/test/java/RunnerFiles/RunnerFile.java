@@ -18,7 +18,7 @@ import io.cucumber.testng.TestNGCucumberRunner;
 @CucumberOptions(
 		  features="src/test/resources/FeatureFiles",
 		  glue={"StepDefinitions"},
-		  plugin={"pretty", "html:target/Reportd.html"},
+		  plugin={"pretty", "json:target/Reportd.json"},
 		  monochrome=true)
 public class RunnerFile extends AbstractTestNGCucumberTests
 {                                   

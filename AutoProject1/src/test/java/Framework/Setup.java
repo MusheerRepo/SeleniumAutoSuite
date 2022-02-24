@@ -55,8 +55,11 @@ public class Setup
 	{
 		try
 		{
+			
 			TakesScreenshot tsc=(TakesScreenshot)driver;
 			File src= tsc.getScreenshotAs(OutputType.FILE);
+			
+			//to save on file
 			File dest=new File("D:\\Projects\\Automation\\AutoProject1\\src\\test\\java\\Utility\\FailureScreenshot.png");
 			FileUtils.copyFile(src, dest);
 		}
