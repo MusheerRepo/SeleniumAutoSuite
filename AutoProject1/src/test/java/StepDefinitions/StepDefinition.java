@@ -53,7 +53,6 @@ public class StepDefinition extends Setup
 			System.out.println("Mozilla Browser initialized");
 		}
 		driver.manage().window().maximize();
-		Reporter.log("Browser initialized");
 		System.out.println("Browser initialized");
 	}
 	
@@ -66,10 +65,10 @@ public class StepDefinition extends Setup
 			TakesScreenshot tsc=(TakesScreenshot)driver;
 			byte[] src= tsc.getScreenshotAs(OutputType.BYTES);
 			scenario.attach(src,"image/png","SS");
+			System.out.println("Screenshot captured for failed test scenario");
 		}
-		driver.close();
+		//driver.close();
 		driver.quit();
-		Reporter.log("Browser closed");
 		System.out.println("Browser closed");
 	}
 	

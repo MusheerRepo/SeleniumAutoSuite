@@ -48,6 +48,7 @@ public class Setup
 	public void initializeDriver(String ebrowser)
 	{
 		browser=ebrowser;
+		System.out.println(browser+" is used for test execution");
 	}
 	
 	//Function to take screenshot
@@ -62,6 +63,7 @@ public class Setup
 			//to save on file
 			File dest=new File("D:\\Projects\\Automation\\AutoProject1\\src\\test\\java\\Utility\\FailureScreenshot.png");
 			FileUtils.copyFile(src, dest);
+			System.out.println("Screenshot captured and is saved");
 		}
 		catch(Exception E)
 		{
@@ -78,6 +80,8 @@ public class Setup
 		System.setProperty("webdriver.chrome.driver", 
 				"D://Projects//Automation//drivers//chromedriver.exe");
 		WebDriver driver1=new ChromeDriver();
+		System.out.println("Process to get fake credentials started");
+		
 		driver1.get("https://www.fakenamegenerator.com/");
 		driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
@@ -86,6 +90,7 @@ public class Setup
 		
 		username=driver1.findElement(fuser).getText();
 		driver1.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+		System.out.println("Fake credentials captured");
 		
 		driver1.close();
 		driver1.quit();

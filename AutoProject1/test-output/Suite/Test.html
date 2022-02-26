@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Feb 24 21:25:41 IST 2022</td>
+<td>Started on:</td><td>Sat Feb 26 08:52:39 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>57 seconds (57916 ms)</td>
+<tr><td>Total time:</td><td>93 seconds (93006 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,48 +75,32 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Follow us on facebook", "Optional[Homepage]"<br/>
-<a href="#Output-1054913783" onClick='toggleBox("Output-1054913783", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1054913783" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1054913783">
-Browser initialized<br/>
-Browser closed<br/>
-</div>
-</td>
+<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign un with correct credentials", "Optional[Sign un]"</td>
 <td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at StepDefinitions.StepDefinition.homepage_of_regex_site(StepDefinition.java:92)
-	at ?.homepage of site(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/Followusonfacebook.feature:5)
-... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1054913783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1054913783'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at StepDefinitions.StepDefinition.user_should_be_able_to_sign_up(StepDefinition.java:121)
+	at ?.user should be able to sign up(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/ASignupwithcorrectcredentials.feature:8)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace698977695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace698977695'><pre>java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
 	at org.testng.Assert.assertTrue(Assert.java:45)
 	at org.testng.Assert.assertTrue(Assert.java:55)
-	at StepDefinitions.StepDefinition.homepage_of_regex_site(StepDefinition.java:92)
-	at ?.homepage of site(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/Followusonfacebook.feature:5)
+	at StepDefinitions.StepDefinition.user_should_be_able_to_sign_up(StepDefinition.java:121)
+	at ?.user should be able to sign up(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/ASignupwithcorrectcredentials.feature:8)
 </pre></div></td>
-<td>4</td>
+<td>32</td>
 <td>RunnerFiles.RunnerFile@a1153bc</td></tr>
 <tr>
-<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign un with correct credentials", "Optional[Sign un]"<br/>
-<a href="#Output-918606013" onClick='toggleBox("Output-918606013", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-918606013" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-918606013">
-Browser initialized<br/>
-Browser closed<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@value=&apos;1&apos;]&quot;}
+<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Follow us on facebook", "Optional[Homepage]"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;fb-like-box fb_iframe_widget&apos;]&quot;}
   (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;MUSHEER&apos;, ip: &apos;192.168.29.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fba1ad9f7e4ef48fd600e8be85fb453b, findElement {using=xpath, value=//*[@value=&apos;1&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62536/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fba1ad9f7e4ef48fd600e8be85fb453b
+Command: [e6134b7c3dcc2779ac71ba97ae93de2f, findElement {using=xpath, value=//*[@class=&apos;fb-like-box fb_iframe_widget&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50110/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e6134b7c3dcc2779ac71ba97ae93de2f
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -128,19 +112,19 @@ Session ID: fba1ad9f7e4ef48fd600e8be85fb453b
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at Pages.LoginMyStore.filldetails(LoginMyStore.java:54)
-	at StepDefinitions.StepDefinition.Signing_up_with_valid_credentials(StepDefinition.java:115)
-	at ?.Signing up with valid credentials(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/ASignupwithcorrectcredentials.feature:7)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace918606013", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace918606013'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@value=&apos;1&apos;]&quot;}
+	at Pages.Homepage.facebookfollowinput(Homepage.java:31)
+	at StepDefinitions.StepDefinition.email_added_to_the_follow_us_on_facebook_field(StepDefinition.java:149)
+	at ?.email added to the follow us on facebook field(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/Followusonfacebook.feature:8)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace437098149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace437098149'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;fb-like-box fb_iframe_widget&apos;]&quot;}
   (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;MUSHEER&apos;, ip: &apos;192.168.29.159&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fba1ad9f7e4ef48fd600e8be85fb453b, findElement {using=xpath, value=//*[@value=&apos;1&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62536/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fba1ad9f7e4ef48fd600e8be85fb453b
+Command: [e6134b7c3dcc2779ac71ba97ae93de2f, findElement {using=xpath, value=//*[@class=&apos;fb-like-box fb_iframe_widget&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50110/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e6134b7c3dcc2779ac71ba97ae93de2f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -157,11 +141,11 @@ Session ID: fba1ad9f7e4ef48fd600e8be85fb453b
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at Pages.LoginMyStore.filldetails(LoginMyStore.java:54)
-	at StepDefinitions.StepDefinition.Signing_up_with_valid_credentials(StepDefinition.java:115)
-	at ?.Signing up with valid credentials(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/ASignupwithcorrectcredentials.feature:7)
+	at Pages.Homepage.facebookfollowinput(Homepage.java:31)
+	at StepDefinitions.StepDefinition.email_added_to_the_follow_us_on_facebook_field(StepDefinition.java:149)
+	at ?.email added to the follow us on facebook field(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/Followusonfacebook.feature:8)
 </pre></div></td>
-<td>21</td>
+<td>18</td>
 <td>RunnerFiles.RunnerFile@a1153bc</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -172,30 +156,14 @@ Session ID: fba1ad9f7e4ef48fd600e8be85fb453b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in with correct credentials", "Optional[Sign in]"<br/>
-<a href="#Output-1775383190" onClick='toggleBox("Output-1775383190", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1775383190" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1775383190">
-Browser initialized<br/>
-Browser closed<br/>
-</div>
-</td>
+<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logo", "Optional[Homepage]"</td>
 <td></td>
-<td>18</td>
+<td>28</td>
 <td>RunnerFiles.RunnerFile@a1153bc</td></tr>
 <tr>
-<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logo", "Optional[Homepage]"<br/>
-<a href="#Output-909918801" onClick='toggleBox("Output-909918801", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-909918801" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-909918801">
-Browser initialized<br/>
-Browser closed<br/>
-</div>
-</td>
+<td title='RunnerFiles.RunnerFile.runScenario()'><b>runScenario</b><br>Test class: RunnerFiles.RunnerFile<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sign in with correct credentials", "Optional[Sign in]"</td>
 <td></td>
-<td>13</td>
+<td>12</td>
 <td>RunnerFiles.RunnerFile@a1153bc</td></tr>
 </table><p>
 </body>

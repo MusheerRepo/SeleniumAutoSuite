@@ -1,51 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Browser initialized]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
-    </line>
-    <line>
-      <![CDATA[Browser initialized]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
-    </line>
-    <line>
-      <![CDATA[Browser initialized]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
-    </line>
-    <line>
-      <![CDATA[Browser initialized]]>
-    </line>
-    <line>
-      <![CDATA[Browser closed]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-02-24T21:25:41 IST" name="Suite" finished-at="2022-02-24T21:26:39 IST" duration-ms="57916">
+  <suite started-at="2022-02-26T08:52:39 IST" name="Suite" finished-at="2022-02-26T08:54:12 IST" duration-ms="93006">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-24T21:25:41 IST" name="Test" finished-at="2022-02-24T21:26:39 IST" duration-ms="57916">
+    <test started-at="2022-02-26T08:52:39 IST" name="Test" finished-at="2022-02-26T08:54:12 IST" duration-ms="93006">
       <class name="RunnerFiles.RunnerFile">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-24T21:25:41 IST" name="setUpClass" finished-at="2022-02-24T21:25:42 IST" duration-ms="467" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:52:39 IST" name="setUpClass" finished-at="2022-02-26T08:52:39 IST" duration-ms="414" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5f5827d0]]>
+                <![CDATA[org.testng.TestRunner@1e3df614]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-24T21:25:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-24T21:26:03 IST" duration-ms="21015" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:52:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:53:11 IST" duration-ms="32105" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -58,28 +34,59 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@value='1']"}
-  (Session info: chrome=98.0.4758.102)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.2', revision: '9a5a329c5a'
-System info: host: 'MUSHEER', ip: '192.168.29.159', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fba1ad9f7e4ef48fd600e8be85fb453b, findElement {using=xpath, value=//*[@value='1']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62536/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fba1ad9f7e4ef48fd600e8be85fb453b]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@value='1']"}
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at StepDefinitions.StepDefinition.user_should_be_able_to_sign_up(StepDefinition.java:121)
+at ✽.user should be able to sign up(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/ASignupwithcorrectcredentials.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:53:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:53:30 IST" duration-ms="18976" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Follow us on facebook"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Homepage]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='fb-like-box fb_iframe_widget']"}
   (Session info: chrome=98.0.4758.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'MUSHEER', ip: '192.168.29.159', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [fba1ad9f7e4ef48fd600e8be85fb453b, findElement {using=xpath, value=//*[@value='1']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62536}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62536/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fba1ad9f7e4ef48fd600e8be85fb453b
+Command: [e6134b7c3dcc2779ac71ba97ae93de2f, findElement {using=xpath, value=//*[@class='fb-like-box fb_iframe_widget']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50110/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e6134b7c3dcc2779ac71ba97ae93de2f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='fb-like-box fb_iframe_widget']"}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'MUSHEER', ip: '192.168.29.159', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e6134b7c3dcc2779ac71ba97ae93de2f, findElement {using=xpath, value=//*[@class='fb-like-box fb_iframe_widget']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50110/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e6134b7c3dcc2779ac71ba97ae93de2f
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -96,59 +103,16 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-at Pages.LoginMyStore.filldetails(LoginMyStore.java:54)
-at StepDefinitions.StepDefinition.Signing_up_with_valid_credentials(StepDefinition.java:115)
-at ✽.Signing up with valid credentials(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/ASignupwithcorrectcredentials.feature:7)
+at Pages.Homepage.facebookfollowinput(Homepage.java:31)
+at StepDefinitions.StepDefinition.email_added_to_the_follow_us_on_facebook_field(StepDefinition.java:149)
+at ✽.email added to the follow us on facebook field(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/Followusonfacebook.feature:8)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[Browser initialized]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-24T21:26:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-24T21:26:07 IST" duration-ms="4215" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Follow us on facebook"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Optional[Homepage]"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at StepDefinitions.StepDefinition.homepage_of_regex_site(StepDefinition.java:92)
-at ✽.homepage of site(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/Followusonfacebook.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[Browser initialized]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-24T21:26:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-24T21:26:20 IST" duration-ms="13149" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:53:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:53:59 IST" duration-ms="28386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -162,15 +126,9 @@ at ✽.homepage of site(file:///D:/Projects/Automation/AutoProject1/src/test/res
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Browser initialized]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-24T21:26:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-24T21:26:39 IST" duration-ms="18378" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:53:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:54:11 IST" duration-ms="12603" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -184,25 +142,19 @@ at ✽.homepage of site(file:///D:/Projects/Automation/AutoProject1/src/test/res
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Browser initialized]]>
-            </line>
-            <line>
-              <![CDATA[Browser closed]]>
-            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-24T21:26:39 IST" name="tearDownClass" finished-at="2022-02-24T21:26:39 IST" duration-ms="632" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:54:11 IST" name="tearDownClass" finished-at="2022-02-26T08:54:12 IST" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- RunnerFiles.RunnerFile -->
       <class name="Framework.Setup">
-        <test-method is-config="true" signature="getCredentials()[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-02-24T21:25:32 IST" name="getCredentials" finished-at="2022-02-24T21:25:41 IST" duration-ms="9283" status="PASS">
+        <test-method is-config="true" signature="getCredentials()[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-02-26T08:52:28 IST" name="getCredentials" finished-at="2022-02-26T08:52:39 IST" duration-ms="10713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCredentials -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-02-24T21:25:41 IST" name="initializeDriver" finished-at="2022-02-24T21:25:41 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-02-26T08:52:39 IST" name="initializeDriver" finished-at="2022-02-26T08:52:39 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>

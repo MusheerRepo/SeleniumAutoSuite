@@ -47,6 +47,7 @@ public class LoginMyStore extends Setup
 		//XSSFSheet sh=wb.getSheetAt(0);
 		
 		Scanner scob=new Scanner(new File("D:\\Projects\\Automation\\AutoProject1\\src\\test\\java\\TestData\\tdft.txt"));
+		System.out.println("File stream for test data from file initialized");
 		
 		driver.findElement(emailTextField).sendKeys(email);
 		driver.findElement(createaccountbutton).click();
