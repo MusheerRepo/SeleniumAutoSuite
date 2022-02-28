@@ -15,6 +15,7 @@ public class Homepage extends Setup
 	public boolean funclogo()
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		System.out.println("Visibility of logo is being checked");
 		return(driver.findElement(logo).isDisplayed());
 		
 	}
@@ -22,6 +23,7 @@ public class Homepage extends Setup
 	public void clicksigninbutton()
 	{
 		driver.findElement(signinbutton).click();
+		System.out.println("Sign in button clicked");
 	}
 	
 	public void facebookfollowinput()
