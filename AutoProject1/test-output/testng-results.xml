@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-26T08:52:39 IST" name="Suite" finished-at="2022-02-26T08:54:12 IST" duration-ms="93006">
+  <suite started-at="2022-03-01T05:23:31 IST" name="Suite" finished-at="2022-03-01T05:28:27 IST" duration-ms="296159">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-02-26T08:52:39 IST" name="Test" finished-at="2022-02-26T08:54:12 IST" duration-ms="93006">
+    <test started-at="2022-03-01T05:23:31 IST" name="Test" finished-at="2022-03-01T05:28:27 IST" duration-ms="296159">
       <class name="RunnerFiles.RunnerFile">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:52:39 IST" name="setUpClass" finished-at="2022-02-26T08:52:39 IST" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-03-01T05:23:31 IST" name="setUpClass" finished-at="2022-03-01T05:23:33 IST" duration-ms="1237" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1e3df614]]>
+                <![CDATA[org.testng.TestRunner@286855ea]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:52:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:53:11 IST" duration-ms="32105" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-03-01T05:23:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T05:24:12 IST" duration-ms="39948" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,25 +34,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at StepDefinitions.StepDefinition.user_should_be_able_to_sign_up(StepDefinition.java:121)
-at ✽.user should be able to sign up(file:///D:/Projects/Automation/AutoProject1/src/test/resources/FeatureFiles/ASignupwithcorrectcredentials.feature:8)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:53:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:53:30 IST" duration-ms="18976" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-03-01T05:24:12 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T05:27:16 IST" duration-ms="184002" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -73,9 +58,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'MUSHEER', ip: '192.168.29.159', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e6134b7c3dcc2779ac71ba97ae93de2f, findElement {using=xpath, value=//*[@class='fb-like-box fb_iframe_widget']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50110/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e6134b7c3dcc2779ac71ba97ae93de2f]]>
+Command: [b90e154698be2515b41eb1d55b07fa55, findElement {using=xpath, value=//*[@class='fb-like-box fb_iframe_widget']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50913}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50913/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b90e154698be2515b41eb1d55b07fa55]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='fb-like-box fb_iframe_widget']"}
@@ -84,9 +69,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.1.2', revision: '9a5a329c5a'
 System info: host: 'MUSHEER', ip: '192.168.29.159', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e6134b7c3dcc2779ac71ba97ae93de2f, findElement {using=xpath, value=//*[@class='fb-like-box fb_iframe_widget']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50110}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50110/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: e6134b7c3dcc2779ac71ba97ae93de2f
+Command: [b90e154698be2515b41eb1d55b07fa55, findElement {using=xpath, value=//*[@class='fb-like-box fb_iframe_widget']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\Users\Mushe\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:50913}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50913/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b90e154698be2515b41eb1d55b07fa55
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -112,7 +97,7 @@ at ✽.email added to the follow us on facebook field(file:///D:/Projects/Automa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:53:30 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:53:59 IST" duration-ms="28386" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-03-01T05:27:17 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T05:27:47 IST" duration-ms="30459" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,7 +113,7 @@ at ✽.email added to the follow us on facebook field(file:///D:/Projects/Automa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:53:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-02-26T08:54:11 IST" duration-ms="12603" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-03-01T05:27:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-03-01T05:28:27 IST" duration-ms="39697" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -144,17 +129,17 @@ at ✽.email added to the follow us on facebook field(file:///D:/Projects/Automa
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-02-26T08:54:11 IST" name="tearDownClass" finished-at="2022-02-26T08:54:12 IST" duration-ms="460" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerFiles.RunnerFile@a1153bc]" started-at="2022-03-01T05:28:27 IST" name="tearDownClass" finished-at="2022-03-01T05:28:27 IST" duration-ms="758" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- RunnerFiles.RunnerFile -->
       <class name="Framework.Setup">
-        <test-method is-config="true" signature="getCredentials()[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-02-26T08:52:28 IST" name="getCredentials" finished-at="2022-02-26T08:52:39 IST" duration-ms="10713" status="PASS">
+        <test-method is-config="true" signature="getCredentials()[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-03-01T05:23:01 IST" name="getCredentials" finished-at="2022-03-01T05:23:31 IST" duration-ms="29824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCredentials -->
-        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-02-26T08:52:39 IST" name="initializeDriver" finished-at="2022-02-26T08:52:39 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="initializeDriver(java.lang.String)[pri:0, instance:Framework.Setup@6025e1b6]" started-at="2022-03-01T05:23:31 IST" name="initializeDriver" finished-at="2022-03-01T05:23:31 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
