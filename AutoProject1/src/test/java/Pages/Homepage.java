@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import Framework.Setup;
 import org.testng.Reporter;
 
+@SuppressWarnings("unused")
 public class Homepage extends Setup
 {
 	//Declaring webelement variables
@@ -12,6 +13,7 @@ public class Homepage extends Setup
 	By signinbutton= By.xpath("//a[@class='login']");
 	By facbookfollow=By.xpath("//*[@class='fb-like-box fb_iframe_widget']");
 	
+	@SuppressWarnings("deprecation")
 	public boolean funclogo()
 	{
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

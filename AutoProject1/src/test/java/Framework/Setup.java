@@ -33,6 +33,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
+@SuppressWarnings("unused")
 public class Setup
 {
 	//variables
@@ -73,6 +74,7 @@ public class Setup
 	}
 	
 	//Getting credentials from fakenamegenerator.com
+	@SuppressWarnings("deprecation")
 	@BeforeSuite(alwaysRun = true)
 	public void getCredentials()throws Exception
 	{
