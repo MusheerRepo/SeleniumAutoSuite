@@ -53,7 +53,6 @@ public class LoginMyStore extends Setup
 		driver.findElement(createaccountbutton).click();
 		
 		driver.findElement(MrMrs).click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(Firstname).sendKeys(username);
 		driver.findElement(lastname).sendKeys(username);
 		driver.findElement(passwordfield).sendKeys(password);

@@ -18,6 +18,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 
+import com.google.common.base.Verify;
+
 import Framework.Setup;
 import Pages.Homepage;
 import Pages.LoginMyStore;
@@ -41,6 +43,7 @@ public class StepDefinition extends Setup
 			System.setProperty("webdriver.chrome.driver", 
 					"D://Projects//Automation//drivers//chromedriver.exe");
 			driver=new ChromeDriver();
+			//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			System.out.println("Chrome Browser initialized");
 			
 		}
@@ -87,7 +90,6 @@ public class StepDefinition extends Setup
 			System.out.println("Error encountered while fetching properties file");
 		}
 		driver.get((String)ob.getProperty("url"));
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Assert.assertTrue(driver.getTitle().equalsIgnoreCase("My Store"));
 	}
 	
@@ -118,6 +120,8 @@ public class StepDefinition extends Setup
 	@Then("user should be able to sign up")
 	public void user_should_be_able_to_sign_up()
 	{
+		//Verify.verify(driver.getTitle().equalsIgnoreCase("My account - My Stor"));
+		//System.out.println("Verified");
 		Assert.assertTrue(driver.getTitle().equalsIgnoreCase("My account - My Store"));
 	}
 	

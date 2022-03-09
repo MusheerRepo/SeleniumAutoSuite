@@ -16,7 +16,6 @@ public class Homepage extends Setup
 	@SuppressWarnings("deprecation")
 	public boolean funclogo()
 	{
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		System.out.println("Visibility of logo is being checked");
 		return(driver.findElement(logo).isDisplayed());
 		

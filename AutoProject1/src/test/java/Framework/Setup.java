@@ -88,10 +88,8 @@ public class Setup
 		driver1.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		email=driver1.findElement(fem).getText().split("\\r?\\n")[0];
-		driver1.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		
 		username=driver1.findElement(fuser).getText();
-		driver1.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		System.out.println("Fake credentials captured");
 		
 		driver1.close();

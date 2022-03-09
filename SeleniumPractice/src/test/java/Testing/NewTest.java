@@ -16,6 +16,8 @@ public class NewTest
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://demo.guru99.com/test/drag_drop.html");
+	  
+	  /*
 	  Actions act=new Actions(driver);
 	  act.clickAndHold(driver.findElement(By.xpath("//*[@id=\"fourth\"]")))
 	  .moveToElement(driver.findElement(By.xpath("//*[@id=\"amt7\"]/li")))
@@ -23,9 +25,29 @@ public class NewTest
 	  
 	  Thread.sleep(5000);
 	  System.out.println("Task done");
+	  */
+		
+	  driver.get("https://google.com");
+	  driver.findElement(By.name("q")).sendKeys("Hello");
+	  driver.findElement(By.name("btnK")).click();
 	  
+	  System.out.println("Google opened");
+	  Thread.sleep(3000);
+	  
+	  driver.navigate().back();
+	  System.out.println("Back to guru99");
+	  Thread.sleep(3000);
+	  
+	  driver.navigate().forward();
+	  System.out.println("Now on google again");
+	  
+	  Thread.sleep(3000);
+	  
+	  driver.navigate().refresh();
+	  System.out.println("Window refreshed");
+	  
+	  Thread.sleep(3000);
+
 	  driver.quit();
-	  
-	  
   }
 }
