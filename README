@@ -1,0 +1,8 @@
+Hi Reader,
+
+This repo is build from scratch by Musheer Ahmad Khan.
+This code repo is having hybrid framework used, where the data is fetched from properties file and and text file.
+
+Maven is used as project building tool, with TestNG as testing framework and POM as design pattern.
+
+Cucumber reporting is used for reporting purposes.
